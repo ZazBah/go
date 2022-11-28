@@ -1,0 +1,27 @@
+.explore{
+    padding: 120px 0px;
+    h2{
+        @include heading1;
+        margin-bottom: 30px;
+    }
+    p{
+        @include pera1;
+        padding-right: 700px;
+        margin-bottom: 30px;
+    }
+    .button_box{
+        button{
+            @include button;
+            margin-right: 10px;
+            background: $whitedark;
+            color: $grey;
+            transition: $transition;
+        }
+        .slick-active{
+            button{
+                background: $green;
+                color: $white;
+            }
+        }
+    }
+}

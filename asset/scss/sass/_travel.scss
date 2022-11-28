@@ -1,0 +1,73 @@
+.travel{
+    padding: 148px 0px;
+    background: $bgdark;
+
+    h2{
+        @include heading1;
+        margin: 70px 0 40px;
+    }
+    p{
+        @include pera1;
+        
+    }
+    ul{
+        padding: 0 0 35px 0;
+        li{
+            @include pera1;
+            display: flex;
+            .icon{
+                margin-right: 15px;
+            }
+        }
+    }
+    button{
+        @include button;
+    }
+    .acivment_box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+        .card{
+            padding: 62px 32px;
+            border: none;
+            border-radius: 17px;
+            width: 48%;
+            height: 315px;
+            margin-bottom: 20px;
+            transition: $transition;
+            .icon_box{
+                width: 84.18px;
+                height: 75px;
+                background: rgba(0, 127, 95, 0.1);
+                border-radius: 14px;
+                padding: 17px;
+                margin-bottom: 30px;
+                .imgbox{
+                    img{
+                        height: 100%;
+                    }
+                }
+            }
+            h3{
+                @include heading1;
+            }
+            h4{
+                @include heading2;
+                font-size: $fsMedium;
+            }
+            &:hover{
+                box-shadow: $shadow;
+                background: $green;
+                .icon_box{
+                    background: $white;
+                }
+                h3{
+                    color: $white;
+                }
+                h4{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

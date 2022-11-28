@@ -1,0 +1,87 @@
+.destination{
+    padding: 0px 0px 60px;
+    h2{
+        @include heading1;
+        text-align: center;
+    }
+    p{
+        @include pera1;
+        text-align: center;
+        padding: 0px 330px;
+        margin-bottom: 100px;
+    }
+
+    .destination_swiper{
+        z-index: $layer2;
+        padding-bottom: 40px;
+        .swiper_item{
+            margin: 0 10px;
+            .card{
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                transition: $transition-5;
+        
+                .card_img{
+                    width: 100%;
+                    .imgbox{
+                        border-radius: 10px;
+                    }
+                }
+                .rating{
+                    padding-top: 15px;
+                    span{
+                        color: $yellow;
+                        font-weight: $fwNormal;
+                        font-size: $fsSmall;
+                        line-height: 30px;
+                    }
+                    .not_fill{
+                        color: #e0e0e0;
+                    }
+                }
+                h3{
+                 @include heading2;
+                 font-size: 23px;
+                 margin-bottom: 5px;  
+                }
+                p{
+                    @include pera1;
+                    font-size: 14px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+                h4{
+                    @include pera1;
+                    margin: 10px 0;
+                    span{
+                        @include heading2;
+                        font-weight: $fwBold;
+                    }
+                }
+                a{
+                    button{
+                        @include button;
+                        background: transparent;
+                        border: 1px solid $green;
+                        color: $green;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+        .slick-center{
+            padding: 0 0 20px;
+            .card{
+                box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
+                a{
+                    button{
+                        background: $green;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

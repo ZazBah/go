@@ -1,0 +1,35 @@
+*{
+    cursor: default;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+    position: relative;
+    scroll-behavior: smooth;
+    font-family: $popins;
+    font-style: normal;
+}
+body,
+html{
+    overflow-x: hidden;
+}
+select,
+input,
+button:focus{
+    outline: none;
+}
+ul,
+ol{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: #000;
+}

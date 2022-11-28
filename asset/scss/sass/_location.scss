@@ -1,0 +1,83 @@
+.slider{
+    .location_slider{
+        z-index: $layer2;
+        padding-bottom: 50px;
+        .swiper_item{
+            margin: 0 10px;
+            .card{
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                transition: $transition-5;
+        
+                .card_img{
+                    width: 100%;
+                    .imgbox{
+                        border-radius: 10px;
+                    }
+                }
+                .rating{
+                    padding-top: 15px;
+                    span{
+                        color: $yellow;
+                        font-weight: $fwNormal;
+                        font-size: $fsSmall;
+                        line-height: 30px;
+                    }
+                }
+                h3{
+                 @include heading2;
+                 font-size: 23px;
+                 margin-bottom: 5px;  
+                }
+                p{
+                    @include pera1;
+                    font-size: 14px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                }
+                h4{
+                    @include pera1;
+                    font-weight: 500;
+                    font-size: 20px;
+                    span{
+                        @include heading2;
+                        font-weight: $fwBold;
+                    }
+                }
+            }
+        }
+        .slick-center{
+            padding: 0 0 20px;
+            .card{
+                box-shadow:  0px 10px 20px rgba(0, 0, 0, 0.1);
+                a{
+                    button{
+                        background: $green;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            li{
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background: #D6D2D2;
+                cursor: pointer;
+                button{
+                    display: none;
+                }
+            }
+            .slick-active{
+                background: $green;
+            }
+        }
+    }
+}

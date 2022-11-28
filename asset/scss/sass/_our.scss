@@ -1,0 +1,192 @@
+.our_destination{
+    padding: 148px 0;
+
+    h2{
+        @include heading1;
+        margin: 130px 0 40px;
+    }
+    p{
+        @include pera1;
+        margin-bottom: 40px;
+    }
+    button{
+        @include button;
+    }
+    .card_img_box{
+        width: 100%;
+        height: 620px;
+        position: relative;
+
+        .imgbox{
+            width: 70%;
+            height: auto;
+            border-radius: 17px;
+            position: absolute;
+            img{
+                transition: $transition-5;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .img_back{
+            top: 0;
+            left: 0;
+        }
+        .img_font{
+            border: 10px solid $white;
+            right: 0;
+            bottom: 50px;
+        }
+        .svg{
+            position: absolute;
+            top: 95px;
+            right: 80px;
+        }
+        .pera_box{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            p{
+                padding: 20px 10px;
+                @include pera1;
+                background-color: $white;
+                border-radius: 8px;
+                font-family: $open;
+                margin-bottom: 5px;
+                line-height: 0;
+                
+                &:nth-child(1){
+                    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+                    i{
+                        color: $green;
+                        margin-right: 10px;
+                        line-height: 0;
+                    }
+                }
+                &:nth-child(2){
+                    padding-left: 40px;
+                }
+                &:nth-child(3){
+                    padding-left: 40px;
+                    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+                }
+                &:nth-child(4){
+                    padding-left: 40px;
+                    span{
+                        margin-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .give_promo{
+        ul{
+            li{
+                @include pera1;
+                width: 49%;
+                display: inline-block;
+                line-height: 40px;
+                span{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .card_img_box{
+            .svg{
+                top: 318px;
+                right: 318px;
+            }
+        }
+    }
+    .money_back{
+        h2{
+            @include heading1;
+            margin: 30px 0 40px;
+        }
+        .accordion_box{
+            width: 420px;
+            .accordion{
+
+                li{
+                    padding: 10px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                    transition: $transition;
+
+                    .link{
+                        font-weight: $fwMedium;
+                        font-size: $fsNormal;
+                        margin: 0;
+                        padding: 0;
+                        letter-spacing: 0.225px;
+                        color: $black;
+
+                        .circle{
+                            border-radius: 50%;
+                            color: $mediumgrey;
+                            transition: $transition;
+                            margin-right: 10px;
+                        }
+                        .arrow{
+                            transition: $transition;
+                            margin-left: 5px;
+                        }
+                    }
+
+                    .submenu{
+                        display: none;
+                        li{
+                            padding: 0;
+                            background: transparent;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .open{
+                    background: #007F5F10;
+                    .link{
+                        .circle{
+                            background-color: $green;
+                            color: $green;
+                        }
+                        .arrow{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+
+        .card_img_box{
+            .pera_box{
+                left: 30px;
+                bottom: 60px;
+    
+                p{
+                    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+                    margin-bottom: 20px;
+                    &:nth-child(2){
+                        padding: 20px 10px;
+                        margin-left: 30px;
+                        margin-right: -30px;
+                    }
+                    &:nth-child(3){
+                        padding: 20px 10px;
+                        margin-left: 10px;
+                        margin-right: -10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+  

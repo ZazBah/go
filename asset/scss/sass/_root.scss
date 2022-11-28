@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Open+Sans&family=Poppins:wght@400;500;600&family=Roboto&display=swap');
+
+$green: #007F5F;
+$grey: #616161;
+$white: #FFFFFF;
+$darkgrey: #292929;
+$mediumgrey: #6A6A6A;
+$black: #1E1E1E;
+$yellow: #FF8B00;
+$whitedark: #F3F3F3;
+$whitelight: rgba(255, 255, 255, 0.7);
+
+$bgdark: rgba(30, 30, 30, 0.05);
+$bgmedium: #F0F3F4;
+
+$popins:  'Poppins', sans-serif;
+$nunito: 'Nunito Sans', sans-serif;
+$open:  'Open Sans', sans-serif;
+$robot:  'Roboto', sans-serif;
+
+$fwNormal: 400;
+$fwMedium: 500;
+$fwBold: 600;
+$fwBolder: 700;
+
+$fsSmall: 16px;
+$fsNormal: 18px;
+$fsMedium: 20px;
+$fsBig: 25px;
+$fsExtraBig: 40px;
+$fsLearge: 65px;
+
+$shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+$transition : all linear 0.3s;
+$transition-5 : all linear 0.5s;
+
+$layer1: 2;
+$layer2: 1;
+
+@media screen and (max-width: 768px){
+    $fsSmall: 13px;
+    $fsBig: 25px;
+}
+@media screen and (max-width: 320px){
+
+}
+
+@mixin heading1 {
+    font-weight: $fwBold;
+    font-size: $fsExtraBig;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+    color: $black;
+}
+@mixin heading2 {
+    font-weight: $fwMedium;
+    font-size: $fsBig;
+    line-height: 24px;   
+    letter-spacing: 0.2px;
+    color: #1E1E1E;
+}
+@mixin pera1 {
+    font-weight: $fwNormal;
+    font-size: $fsSmall;
+    line-height: 30px;
+    color: #616161;
+}
+@mixin button{
+    padding: 16px 35px;
+    background: $green;
+    border-radius: 17px;
+    font-weight: $fwBold;
+    font-size: $fsSmall;
+    line-height: 24px;
+    color: $white;
+    border: none;
+}
+.opacity0{
+    opacity: 0;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+    }
+}
+.clear{
+    clear: both;
+}

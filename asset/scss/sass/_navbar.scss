@@ -1,0 +1,85 @@
+.navbar{
+    padding: 40px 0px;
+    width: 100%;
+    z-index: $layer1;
+    .container{
+        .logo{
+            width: 214px;
+        }
+        .hamburger{
+            display: none;
+            border: none;
+            padding: 0;
+            background-color: transparent;
+            color: $green;
+            font-size: 40px;
+            transition: $transition;
+        }
+        .nav_menu{
+            display: flex;
+            z-index: $layer2;
+            .button_mobile{
+                display: none;
+            }
+            ul{
+                display: flex;
+                padding-top: 12px;
+                li{
+                    margin-right: 20px;
+                    a{
+                        font-weight: $fwNormal;
+                        font-size: $fsSmall;
+                        line-height: 24px;
+                        color: $grey;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .book_now{
+            @include button;
+        }
+    }
+}
+@media only screen and (max-width: 912px){
+    .navbar{
+        position: relative;
+        padding: 10px;
+        .container{
+            .logo{
+                width: 150px;
+            }
+            .hamburger{
+                display: block;
+            }
+            .nav_menu{
+                position: absolute;
+                left: 0;
+                top: -1000%;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background-color: #F0F3F4;
+                padding: 20px 0px;
+                transition: $transition-5;
+                .button_mobile{
+                    display: block;
+                }
+                ul{
+                    display: block;
+                    padding-top: 12px;
+                    text-align: center;
+                    li{
+                        margin-top: 5px;
+                    }
+                }
+            }
+            .active_nav_menu{
+                top: 100%;
+            }
+            .book_now{
+                display: none;
+            }
+        }
+    }
+}
